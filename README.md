@@ -1,2 +1,2 @@
 # Algorithms
-It will scripts for all algorithms, I have successfully implemented.
+It will contain scripts for all algorithms, I have successfully implemented.
