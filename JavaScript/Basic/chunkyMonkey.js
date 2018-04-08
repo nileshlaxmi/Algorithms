@@ -1,16 +1,23 @@
 
 function chunkArrayInGroups(arr, size) {
-  var len = arr.length;
-  var finalAr = [];
-  for(var i=0; i<len; i++){
-    var newAr = [];
-    newAr.push(arr.splice(0, size));
-    console.log(newAr + "\n");
-    finalAr.push(newAr);
+
+  var newAr = [];
+  var c=1;
+
+  for(var i=0; i<arr.length; i+=size){
+    var nAr = [];
+    for(var j=i; j<size*c; j++){
+      nAr = arr.slice(i, size*c);
+    }
+    newAr.push(nAr);
+    c++;
+    console.log(nAr);
+
   }
-  console.log(finalAr);
+  console.log(newAr);
   // Break it up.
-  return finalAr;
+  return newAr;
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3);
