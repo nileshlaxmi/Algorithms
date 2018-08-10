@@ -1,5 +1,5 @@
-const linearSearch = () => {
+const linearSearch = (n, ar) => {
 
 }
 
-linearSearch()
+linearSearch(5, [1,2,3,4,5])
