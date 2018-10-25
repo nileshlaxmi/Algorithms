@@ -1,7 +1,6 @@
 //Check for Palindromes
 
 function palindrome(str) {
-  // Good luck!
   var originalStr = str;
   str = str
     .replace(/\W/gi, '')
@@ -20,11 +19,6 @@ function palindrome(str) {
     console.log(false);
     return false;
   }
-
-
-
 }
-
-
 
 palindrome("race car");
