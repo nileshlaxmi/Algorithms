@@ -1,7 +1,6 @@
 //Check for Palindromes
 
 function palindrome(str) {
-  var originalStr = str;
   str = str
     .replace(/\W/gi, '')
     .replace(/\s/gi, '')
